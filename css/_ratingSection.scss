@@ -1,0 +1,89 @@
+@import './variables';
+
+.section-rating {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    font-size: 20px;
+    padding-bottom: 1.4rem;
+  }
+}
+
+.kpi {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
+}
+.websites {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3.2rem;
+  font-size: 1rem;
+  img {
+    max-width: 55px;
+  }
+}
+.features {
+  text-align: center;
+  padding-bottom: 1.5rem;
+  h2 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  p {
+    font-size: 0.875rem;
+    opacity: 0.5;
+  }
+}
+.fedex,
+.walmart {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .section-rating {
+    width: 75%;
+  }
+  .top-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4.2rem;
+    h2 {
+      // width: 60%;
+      font-size: 2.25rem;
+      max-width: 25ch;
+    }
+  }
+  .kpi {
+    width: 40%;
+    .rating {
+      min-width: 35%;
+    }
+    .downloads {
+      min-width: 40%;
+    }
+  }
+  .features {
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .websites {
+    img {
+      min-width: 100px;
+    }
+    .fedex,
+    .walmart {
+      display: block;
+    }
+  }
+}

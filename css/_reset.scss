@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: $darkBlue;
+  font-family: 'Inter', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
